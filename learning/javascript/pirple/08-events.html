@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>08-events</title>
+    <style>
+        /*
+        Lecture: Introduction to Events
+        */
+        #clicky:hover {
+            text-decoration: underline;
+        }
+        .background-color {
+            background: rgb(255, 165, 0);
+            border: 1px solid rgb(0, 0, 0);
+        }
+        .green {
+            background: rgb(123, 255, 0);
+        }
+    </style>
+
+    <!--
+        Lecture: Load Events
+    -->
+    <script>
+        const addToLog = () => {
+            console.log("DOM content loaded and parsed!");
+            
+            const myLog = document.getElementById("log");
+            myLog.innerHTML += "<h1>Hiii ! ! !</h1>"; 
+        }
+        document.addEventListener("DOMContentLoaded", addToLog);
+        
+        const checkImageSize = () => {
+            const myImg = document.getElementById("myImg");
+            console.log("Height: " + myImg.offsetHeight + " " + "width: " + myImg.offsetWidth);
+            myImg.style.width = "640px";
+            myImg.style.height = "360px";
+        }
+        window.addEventListener("load", checkImageSize);
+    </script>
+</head>
+<body>
+    <!--
+        Lecture: Introduction to Events
+    -->
+    <div id="log">
+        <img id="myImg" src="https://i.ytimg.com/vi/g3jCAyPai2Y/maxresdefault.jpg" />
+    </div>
+    <div id="clicky">Click Me!
+        <button>
+            Click Here!
+        </button>
+    </div>
+
+    <div id="background">
+        <h2>I am h2 header.</h2>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    </div>
+
+    <!--
+        Lecture: Preventing Default
+    -->
+    <div id="div2">
+        <a href="https://www.google.com/">Click here to go to Google</a>
+        
+        <form id="myForm" method="POST">
+            <input title="myInput" id="myInput"><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!--
+        Lecture: Key Events
+    -->
+    <div id="div3">
+        <p></p>
+        <textarea title="myTextarea"></textarea>
+    </div>
+<script src="08-events.js"></script>
+</body>
+</html>

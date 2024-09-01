@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="http://db.onlinewebfonts.com/c/1db29588408eadbd4406aae9238555eb?family=Consolas" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div id="impress">
+        <section class="step box" id="slide1" data-x="900" data-y="-1200" data-z="0">
+            <h1>React</h1>
+            <h2>A JavaScript Library for User Interfaces</h2>
+            <h3>Get Started at <a href="https://reactjs.org/">https://reactjs.org/</a></h3>
+        </section>
+
+        <section class="step box" id="slide2" data-x="2400" data-y="-2400" data-z="300">
+            <h2>What is React.js</h2>
+            <p>
+                React.js is an open-source JavaScript library for building user interfaces, specifically for single-page applications.
+                It's used for handling the view layer for web and mobile apps, hence allowing us to create reusable UI components.
+            </p>
+        </section>
+        
+        <section class="step box" id="slide3" data-x="900" data-y="-2400" data-z="600">
+            <h2>Declarative &gt; Imperative</h2>
+            <p>
+                React can improve the <strong>predictability and debugability</strong> of your code.
+                <div class="doublecol">
+                    <div class="doublegrid">
+                        <h3>Imperative</h3>
+                        <h4>HTML</h4>
+                        <p><pre class="code">
+&lt;div id="counter"&gt;0&lt;/div&gt;
+&lt;button id="incBin"&gt;inc&lt;/button&gt;
+                        </pre></p>
+                        <h4>JavaScript</h4>
+                        <p><pre class="code">
+let count = 0;
+const incBin = document.getElementById("incBin");
+const counter = document.getElementById("counter");
+incBin.onclick = () => counter.textContent = ++count</pre></p>
+                    </div>
+                    <div class="doublegrid">
+                        <h3>Declarative</h3>
+                        <h4>JSX</h4>
+                        <p><pre class="code">
+function Counter() {
+    const [count, setCount] = useState(0)
+    return {
+        &lt;&gt;
+            &lt;div&gt;{count}&lt;/div&gt;
+            &lt;button onClick={() => setCount(count + 1)}&gt;inc&lt;/button&gt;
+        &lt;/&gt;
+    }
+}</pre></p>
+                    </div>
+                </div>
+            </p>
+        </section>
+        
+        <section class="step box" id="slide4" data-x="-900" data-y="-1200" data-z="300">
+            <h2>Component-Based</h2>
+            <p>
+                Compose encapsulated components that handle their own state to create complicated user interfaces.
+                <br><br>It's simple to transmit rich data through your app and keep state off of the DOM because component functionality is written in JavaScript rather than templates.
+            </p>
+        </section>
+        
+        <section class="step box" id="slide5" data-x="900" data-y="1200" data-z="-300">
+            <h2>Write it anywhere you please</h2>
+            <p>
+                Because React.js makes no assumptions about the rest of your technological stack, 
+                you can use React to develop new features without having to rewrite old code.
+                <br><br>React can also use <strong><a href="https://nodejs.org/en/">Node</a></strong> (JavaScript runtime) to render on the server and <strong>React Native</strong> to power mobile apps.
+            </p>
+        </section>
+        
+        <section class="step box" id="slide6" data-x="2400" data-y="-1200" data-z="600">
+            <h2>A Basic Component</h2>
+            <p>
+                The <span class="codeInText">render()</span> method in React components takes in inputs and outputs what should be displayed.
+                <br><br>This is how <span class="codeInText">render()</span> accesses input data that is supplied into the component via <span class="codeInText">this.props</span>.
+                <br><br>JSX is not required to use React, but it is preferable to many users.
+            </p>
+        </section>
+        
+        <section class="step box" id="slide7" data-x="2400" data-y="1200" data-z="-300">
+            <h2>A Component With State</h2>
+            <p>
+                A component can store internal state data in addition to collecting input data (through <span class="codeInText">this.props</span>)
+                (accessed via <span class="codeInText">this.state</span>).
+                When the state data of a component changes, the rendered markup is changed by re-invoking <span class="codeInText">render()</span>.
+            </p>
+        </section>
+        
+        <section class="step box" id="slide8" data-x="2400" data-y="2400" data-z="300">
+            <h2>An Application</h2>
+            <p>
+                It's possible to create a Todo application using <span class="codeInText">props</span> and <span class="codeInText">state</span>.
+                The <span class="codeInText">state</span> keeps track of the current list of items as well as the text provided by the user.
+                Event handlers will be collected and implemented using event delegation, despite the fact that they appear to be rendered inline.
+            </p>
+        </section>
+        
+        <section class="step box" id="slide9" data-x="-900" data-y="1200" data-z="-300">
+            <h2>A constituent Using Third-Party Plugins</h2>
+            <p>
+                Using React to communicate with other libraries and frameworks.
+                To convert the <span class="codeInText">&lt;textarea&gt;</span>, for example, <span class="codeInText">remarkable</span>, an external Markdown library, is used.
+            </p>
+        </section>
+        
+        <section class="step box" id="slide10" data-x="-2400" data-y="2400" data-z="300">
+            <h2>Create a New React App</h2>
+            <p>This configures your development environment to allow you to leverage the most recent JavaScript capabilities,
+                as well as providing a pleasant experience and optimizing the project for production.</p>
+            <h3>Requirements</h3>
+            <p>
+                Node.js >= 10.16
+                <br>npm >= 5.6
+            </p>
+            <pre class="code">
+npx create-react-app my-app
+cd my-app
+npm start</pre>
+        </section>
+        
+        <section class="step box" id="slide11" data-x="900" data-y="2400" data-z="-300">
+            <h2>Other Recommended Toolchains</h2>
+            <h3>Next.js</h3>
+            <p>
+                A lightweight framework for building <strong>static and server rendered</strong> apps.
+                <br>It comes with out-of-the-box <strong>style and routing solutions</strong> assuming Node.js is the server environment.
+            </p>
+            <h3>Gatsby</h3>
+            <p>
+                The best approach to build <strong>static webpages</strong>.
+                <br>It allows you to leverage React components whilst pre-rendering HTML and CSS for the shortest possible load time.
+            </p>
+        </section>
+        
+        <section class="step box" id="slide12" data-x="900" data-y="3600" data-z="-600">
+            <h2>A Sample Project - Lotto Number Generator</h2>
+            <pre class="code">
+npx create-react-app lotto
+cd lotto
+</pre>
+            <h4>Now open your IDE and begin with JavaScript file, Lotto.js</h4>
+            <pre class="code">
+import React from 'react'
+
+function Lotto() {
+    return {
+        &lt;&gt;
+            &lt;h1&gt;The three digit number is ...&lt;/h1&gt;
+            &lt;div&gt;1&lt;/div&gt;
+            &lt;div&gt;2&lt;/div&gt;
+            &lt;div&gt;3&lt;/div&gt;
+            &lt;button&gt;Random&lt;/button&gt;
+        &lt;/&gt;
+    }
+}
+export default Lotto
+</pre>
+        </section>
+        
+        <section class="step box" id="slide13" data-x="-900" data-y="2400" data-z="-300">
+            <h2>Continue</h2>
+            <h4>Now create App.js, and import Lotto.js to App.js</h4>
+            <pre class="code">
+import React from 'react'
+import Lotto from './components/Lotto'
+
+function App() {
+    return &lt;Lotto /&gt;
+}
+
+export default App</pre>
+        </section>
+        
+        <section class="step box" id="slide14" data-x="-2400" data-y="-1200" data-z="0">
+            <h2>Continue</h2>
+            <h4>Now go back to Lotto.js</h4>
+            <pre class="code">
+import React <span class="highlight">{ useState }</span> from 'react'
+
+function randomNumber() {
+    return Math.ceil(Math.random() * 9)
+}
+
+function Lotto() {
+    <span class="highlight">const [counter, setCounter] = useState([0, 0, 0])</span>
+    <span class="highlight">const random = () => {
+        setCounter([randomNumber(), randomNumber(), randomNumber()])
+    }</span>
+
+    return {
+        &lt;&gt;
+            &lt;h1&gt;The three digit number is ...&lt;/h1&gt;
+            &lt;div&gt;<span class="highlight">{counter[0]}</span>&lt;/div&gt;
+            &lt;div&gt;<span class="highlight">{counter[1]}</span>&lt;/div&gt;
+            &lt;div&gt;<span class="highlight">{counter[2]}</span>&lt;/div&gt;
+            &lt;button <span class="highlight">onClick={random}</span>&gt;Random&lt;/button&gt;
+        &lt;/&gt;
+    }
+}
+export default Lotto</pre>
+        </section>
+        
+        <section class="step box" id="slide15" data-x="-2400" data-y="-2400" data-z="300">
+            <h1>Our Project is Finished!</h1>
+            <h2>Thank you!</h2>
+        </section>
+        
+    </div>
+    <!-- https://github.com/impress/impress.js/ -->
+    <script src="impress.js"></script>
+    <script>
+        impress().init()
+    </script>
+</body>
+</html>

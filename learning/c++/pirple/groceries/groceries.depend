@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1627969772 source:c:\users\kiang\documents\programming\learn-cplusplus\pirple\groceries\main.cpp
+	<iostream>
+	<iomanip>
+

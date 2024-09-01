@@ -1,0 +1,71 @@
+body {
+    margin: 50px 75px 20px 75px;
+    background-color: rgb(255, 248, 220);
+    line-height: 1.5;
+    font-family: Verdana;
+    width: 1200px;
+}
+
+.detail h1 {
+    font-weight: bold;
+    padding-bottom: 15px;
+    text-decoration: underline;
+}
+
+.detail {
+    color: rgb(80, 91, 102);
+}
+
+.ingredients, .methods h2 {
+    padding-top: 20px;
+}
+
+.ingredi {
+    line-height: 2;
+}
+
+/* 9 first span not italic and red */
+.ingredia {
+    font-style: normal;
+    color: rgb(255, 0, 0);
+}
+
+#dish {
+    /* 6 emphasized */
+    background-color: rgb(255, 225, 106);
+    font-weight: 800;
+    color:rgb(139, 0, 0);
+}
+
+/* 7 italicized */
+.ingredia, .ingredib, .ingredic {
+    font-style: italic;
+}
+
+/* 8 underlined last span within p */
+.ingredic {
+    text-decoration: underline;
+}
+
+.unorlist {
+    /* 4 your bullet-points */
+    list-style-image: url(icon3.png);
+    line-height: 2;
+    font-size: 18px;
+}
+
+.orlist {
+    /* 5 roman numerals */
+    list-style-type: upper-roman;
+    line-height: 2;
+    font-size: 18px;
+}
+
+.recipe h3 {
+    padding-top: 30px;
+}
+
+#credit {
+    padding: 50px 0px 20px 0px;
+    font-weight: bold;
+}

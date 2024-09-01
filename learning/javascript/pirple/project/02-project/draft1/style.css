@@ -1,0 +1,107 @@
+@import url(//db.onlinewebfonts.com/c/1db29588408eadbd4406aae9238555eb?family=Consolas);
+
+:root {
+    --stdfont: 'Source Sans Pro', sans-serif;
+    --almond: rgb(244, 219, 197);
+    --seashell: rgb(253, 246, 238);
+    --duststorm: rgb(223, 204, 200);
+    --customgrey: rgb(199, 184, 193);
+    --customblue: rgb(169, 167, 188);
+    --coolgrey: rgb(149, 147, 174);
+    --fadewhite: rgba(255, 255, 255, 0.67);
+}
+
+body {
+    background-color: var(--customgrey);
+    margin: 0;
+    font-family: var(--stdfont);
+    font-size: 32px;
+    line-height: 1.5em;
+}
+
+pre {
+    display: block;
+    white-space: pre;
+    margin: 0;
+    font-family: var(--stdfont);
+}
+
+/*
+h1 - 64px
+h2 - 48px
+h3 - 40px
+h4 - 24px
+h5 - 16px
+*/
+h1 { font-size: 2em; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.25em; }
+h4 { 
+    font-size: 0.75em;
+    font-weight: 400;
+}
+h5 {
+    font-size: 0.5em;
+    font-weight: 300;
+}
+
+.doublecol {
+    display: grid;
+    grid-template-columns: 44% 56%;
+    background-color: var(--duststorm);
+    padding: 10px;
+}
+
+.doublegrid {
+    background-color: var(--fadewhite);
+    border: 0.25rem solid rgba(255, 255, 255);
+    padding: 1rem;
+    display: block;
+}
+
+.doublegrid h3 {
+    margin: 0;
+    padding-bottom: 0.25em;
+}
+
+.doublegrid h4 {
+    margin: 0;
+    margin-block-start: 0.25em;
+    margin-block-end: 0.25em;
+}
+
+.doublegrid .code {
+    font-size: 0.85rem;
+    line-height: 1.1rem;
+}
+
+#slide1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    display: block;
+    width: 960px;
+    height: 720px;
+    padding: 1em;
+    background-color: var(--fadewhite);
+}
+
+.code { 
+    font-family: "Consolas";
+    font-size: 0.75em;
+    line-height: 1.75rem;
+    background-color: var(--seashell);
+}
+
+.codeInText {
+    font-family: "Consolas";
+    background-color: var(--almond);    
+}
+
+#slide11 .code, #slide12 .code {
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+}

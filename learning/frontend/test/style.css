@@ -1,0 +1,39 @@
+html {
+    background-color: beige;
+    font-family: Verdana, sans-serif;
+    margin: 25px 80px 25px 80px;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 28px;
+    font-weight: 200;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+p, ul {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+#imgone {
+    margin: 0px 0px -20px 0px;
+}
+
+h5 {
+    font-size: 16px;
+    font-weight: 200;
+    text-decoration: underline;
+}

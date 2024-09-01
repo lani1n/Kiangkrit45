@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07-2 The DOM</title>
+    
+    <style>
+        #green {
+            color:rgb(0, 128, 0);
+        }
+
+        .not-green {
+            color: rgb(255, 0, 0);
+        }
+
+        /*
+        Lecture: Traversing the DOM
+        */
+        #blue {
+            color: rgb(0, 0, 255);
+        }
+
+        /*
+        Lecture: IDs and Classes
+        */
+        .purple {
+            color: rgb(250, 235, 215);
+        }
+    </style>
+</head>
+
+<body>
+    <!--
+        Lecture: The Query Selector
+        Lecture: Traversing the DOM
+    -->
+    <div id="green">
+        I should be green.
+    </div>
+
+    <div class="not-green">
+        I should be red and aqua background.
+    </div>
+
+    <div class="not-green">
+        I should be red.
+    </div>
+    
+    <div id="blue" class="not-green">
+        I should be blue.
+    </div>
+
+    <!--
+        Lecture: Lecture: IDs and Classes
+    -->
+    <div class="purple">
+        This will be purple 100 x 100.
+    </div>
+    <footer>
+        <h3 id="foot">This is foot part of footer</h3>
+    </footer>
+    
+    <div id ="created">
+        
+    </div>
+    <script src="07-2-dom.js"></script>
+</body>
+</html>

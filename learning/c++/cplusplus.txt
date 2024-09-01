@@ -1,0 +1,8 @@
+Windows 10 Current (28/12/2021)
+
+Compile cpp file
+
+1. Open Powershell, or Terminal
+2. cd Documents\program
+3. g++ main.cpp -o program.exe
+4. .\\program.exe

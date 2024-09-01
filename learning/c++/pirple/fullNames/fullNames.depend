@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1629624338 source:c:\users\kiang\documents\programming\learn-cplusplus\pirple\fullnames\main.cpp
+	<iostream>
+	"include\fullName.h"
+
+1629607994 source:c:\users\kiang\documents\programming\learn-cplusplus\pirple\fullnames\src\enhancedstrings.cpp
+	"enhancedStrings.h"
+
+1629624837 c:\users\kiang\documents\programming\learn-cplusplus\pirple\fullnames\include\enhancedstrings.h
+	<string>
+
+1629624162 source:c:\users\kiang\documents\programming\learn-cplusplus\pirple\fullnames\src\fullname.cpp
+	"fullName.h"
+
+1629624395 c:\users\kiang\documents\programming\learn-cplusplus\pirple\fullnames\include\fullname.h
+	"enhancedStrings.h"
+

@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1627964994 source:c:\users\kiang\documents\programming\learn-cplusplus\pirple\sizes\main.cpp
+	<iostream>
+	<climits>
+

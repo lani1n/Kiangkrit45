@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <!-- 
+        Learn JavaScript. Quick Course for Beginners
+        https://www.bitdegree.org/user/course/javascript-learn-javascript-quick-course-beginners
+    -->
+    <h1>JavaScript</h1>
+
+    <!-- Hello is changed to World -->
+    <div class="output">Hello</div>
+
+    <button>Click Me</button>
+
+<!-- script -->
+<script>
+// DOM interaction
+
+const output = document.querySelector(".output");
+console.dir(document);
+console.dir(document.body);
+// document.body.textContent = "Hello"
+
+console.dir(output);
+output.textContent = "World";
+
+const divs = document.querySelectorAll("div");
+const btn = document.querySelector("button");
+btn.addEventListener("click", function(e) {
+    console.log("Say Goodbye");
+})
+
+</script>
+</body>
+</html>

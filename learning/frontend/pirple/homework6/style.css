@@ -1,0 +1,124 @@
+/* theme colors from http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/w3css/w3css_color_themes.asp.html
+Limpet Shell
+*/
+
+:root {
+    --text-bg: rgb(234, 248, 248);
+    --heading-bg: rgb(193, 234, 235);
+    --topbtm-bg: rgb(46, 139, 141);
+    --topbtm-clr: rgb(245, 245, 245);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+body {
+    display: block;
+    background-color: rgb(249, 253, 253);
+    font-family: Verdana;
+    font-weight: 400;
+    line-height: 1.75;
+    color: rgb(0, 0, 0);
+}
+
+/* media queries */
+
+@media screen and (max-width: 400px) {
+    body {
+        font-size: 22px;
+    }
+
+    img#image {
+        width: 115%;
+    }
+
+    span.narration {
+        display: none;
+    }
+
+    ul#ingredients {
+        list-style-type: circle;
+        padding-left: 100px;
+    }
+}
+  
+@media screen and (min-width: 401px) and (max-width: 749px) {
+    body {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    img#image {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+.dishname {
+    background-color: var(--topbtm-bg);
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    color: var(--topbtm-clr);
+}
+
+/* description */
+.description {
+    background-color: var(--text-bg);
+    padding: 25px 75px 25px 75px;
+    width: 100%
+}
+
+.detail {
+    padding-bottom: 20px;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+}
+
+.dishdescription {
+    padding: 10px 75px 10px 75px;
+}
+
+.ingredients {
+    list-style-type: none;
+    padding: 0px 75px 25px 75px;
+}
+
+.directions, .links {
+    padding: 10px 75px 10px 100px;
+}
+
+.sources, .methods, .dishdetail {
+    width: 100%;
+    margin-top: 25px;
+    background-color: var(--text-bg);
+}
+
+.recipes h2, .methods h2, .dishdes h2 {
+    padding: 10px 75px 10px 75px;
+    background-color: var(--heading-bg);
+}
+
+/* bottom */
+.bottom {
+    width: 100%;
+    margin-top: 25px;
+}
+
+.credit {
+    padding: 10px 75px 10px 75px;
+    background-color: var(--topbtm-bg);
+    color: var(--topbtm-clr);
+}

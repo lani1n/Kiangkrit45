@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1628098555 source:c:\users\kiang\documents\programming\learn-cplusplus\pirple\quadratic\main.cpp
+	<iostream>
+	<math.h>
+
